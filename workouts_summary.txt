@@ -1,0 +1,41 @@
+==============================
+Workout Summary Report
+==============================
+Total workouts: 30
+
+Squat: 
+  Volume: 10475 kg
+  Max: 105 kg
+  Sets: 27
+  Average reps per set: 4
+
+Bench press: 
+  Volume: 9258 kg
+  Max: 75 kg
+  Sets: 23
+  Average reps per set: 6
+
+Deadlift: 
+  Volume: 6436 kg
+  Max: 125 kg
+  Sets: 13
+  Average reps per set: 4
+
+Overhead press: 
+  Volume: 5901 kg
+  Max: 55 kg
+  Sets: 18
+  Average reps per set: 7
+
+Rows: 
+  Volume: 4480 kg
+  Max: 65 kg
+  Sets: 8
+  Average reps per set: 9
+
+Dumbbell curls: 
+  Volume: 1725 kg
+  Max: 28 kg
+  Sets: 6
+  Average reps per set: 11
+
