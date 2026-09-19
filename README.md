@@ -1,83 +1,141 @@
 # 🏋️ Workout Progress Tracker
 
-A simple and efficient Python-based application to track workout sessions, monitor progress, and stay consistent with fitness goals.
+A lightweight **Python-based Workout Progress Tracker** that allows users to record workout sessions, track exercises and repetitions, and review their workout history directly from the terminal.
 
----
+This project was developed as a practical application of fundamental Python programming concepts, including functions, loops, conditionals, file handling, data structures, and input validation.
 
 ## 📌 Overview
 
-The **Workout Progress Tracker** helps users log their workouts, track improvements over time, and stay accountable. It is designed with simplicity in mind, making it ideal for beginners while still being useful for consistent fitness tracking.
+The Workout Progress Tracker provides a simple way to maintain workout records without requiring a database or external application.
 
-This project demonstrates core programming concepts such as:
+Users can:
 
-* Data structures (lists, dictionaries)
-* File handling
-* Functions and modular design
-* Input validation
+* Add workout entries
+* Record exercises and repetitions
+* Store workout information persistently
+* View previous workout sessions
+* Track workout activity over time
 
----
+The application is designed to be lightweight, easy to use, and completely terminal-based.
 
-## 🚀 Features
+## ✨ Features
 
-* ✅ Add new workout entries
-* ✅ Track exercises (e.g., push-ups, squats, weights)
-* ✅ Store workout data persistently
-* ✅ View workout history
-* ✅ Simple and user-friendly interface
-* ✅ Lightweight and fast (runs in terminal)
+* 🏋️ **Add Workout Entries** — Record exercises performed during a workout.
+* 📊 **Track Exercise Data** — Store information such as exercises, repetitions, and weights.
+* 💾 **Persistent Storage** — Save workout information using local files.
+* 📅 **Workout History** — Review previously recorded workouts.
+* ✅ **Input Validation** — Handle user input and prevent invalid entries.
+* 💻 **Terminal Interface** — Runs directly from the command line with no additional GUI dependencies.
+* ⚡ **Lightweight** — Uses Python's built-in functionality without requiring a database.
 
----
+## 🛠️ Technologies Used
 
-## 🛠️ Tech Stack
+| Technology               | Purpose                                   |
+| ------------------------ | ----------------------------------------- |
+| **Python**               | Core application development              |
+| **Lists & Dictionaries** | Organizing workout data                   |
+| **File I/O**             | Reading and writing workout information   |
+| **Functions**            | Structuring and reusing application logic |
+| **Loops & Conditionals** | Program flow and menu interaction         |
+| **Input Validation**     | Handling user input                       |
+| **Terminal / CLI**       | User interface                            |
 
-* **Language:** Python
-* **Environment:** VS Code / Terminal
-* **Concepts Used:**
+## 🧠 Programming Concepts Demonstrated
 
-  * Functions
-  * Loops & conditionals
-  * File I/O
-  * Basic data structures
+This project demonstrates several fundamental programming concepts:
 
----
+### Functions
+
+The application separates different tasks into functions, making the code easier to understand and maintain.
+
+### Data Structures
+
+Python lists and dictionaries are used to organize and manage workout information.
+
+### File Handling
+
+Workout information is stored locally so that data can persist between program executions.
+
+### Input Validation
+
+User input is validated to reduce errors and ensure the application receives usable information.
+
+### Control Flow
+
+Loops and conditional statements are used to create the interactive terminal menu and control application behavior.
 
 ## 📂 Project Structure
 
-```
+```text
 Workout-Progress-Tracker/
 │
-├── main.py              # Main program logic
-├── data.txt (or json)  # Stores workout data
-└── README.md           # Project documentation
+├── cps109_a1.py
+├── workouts.txt
+├── workouts_summary.txt
+├── cps109_a1_output1.png
+├── cps109_a1_output2.png
+├── cps109_project.pdf
+└── README.md
 ```
 
----
+### File Descriptions
 
-## ▶️ How to Run
+| File                    | Description                                               |
+| ----------------------- | --------------------------------------------------------- |
+| `cps109_a1.py`          | Main Python program containing the workout tracking logic |
+| `workouts.txt`          | Stores workout information                                |
+| `workouts_summary.txt`  | Contains summarized workout information                   |
+| `cps109_a1_output1.png` | Example program output                                    |
+| `cps109_a1_output2.png` | Additional example output                                 |
+| `cps109_project.pdf`    | Project documentation                                     |
+| `README.md`             | Project documentation and usage instructions              |
 
-1. Clone the repository:
+## ⚙️ Getting Started
 
-```
+### Prerequisites
+
+You only need:
+
+* Python 3.x
+* A terminal or command-line environment
+
+No external Python packages are required.
+
+## 📥 Installation
+
+Clone the repository:
+
+```bash
 git clone https://github.com/mpatel1802/Workout-Progress-Tracker.git
 ```
 
-2. Navigate into the folder:
+Navigate into the project directory:
 
-```
+```bash
 cd Workout-Progress-Tracker
 ```
 
-3. Run the program:
+## ▶️ Running the Application
 
-```
-python main.py
+Run the Python program using:
+
+```bash
+python cps109_a1.py
 ```
 
----
+If your system uses `python3`, run:
+
+```bash
+python3 cps109_a1.py
+```
 
 ## 💡 Example Usage
 
-```
+The application provides a menu-driven terminal interface.
+
+Example workflow:
+
+```text
 1. Add Workout
 2. View Progress
 3. Exit
@@ -90,43 +148,36 @@ Enter reps: 30
 Workout saved successfully!
 ```
 
----
+Users can then return to the program and review previously recorded workout information.
 
-## 📈 Future Improvements
+## 🔄 How It Works
 
-* 🔹 Add a graphical user interface (GUI)
-* 🔹 Track calories burned
-* 🔹 Add user authentication
-* 🔹 Export progress as charts
-* 🔹 Store data using a database (SQLite)
+The application follows a simple workflow:
 
----
-
-## 🎯 Why This Project Matters
-
-This project showcases:
-
-* Clean problem-solving skills
-* Ability to build real-world tools
-* Strong understanding of Python fundamentals
-
-It is a great example of applying beginner-level programming to a practical use case.
-
----
-
-## 👤 Author
-
-Mann Patel
-GitHub: https://github.com/mpatel1802
-
----
-
-## ⭐ Contributing
-
-Contributions are welcome! Feel free to fork the repository and submit a pull request.
-
----
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
+```text
+User
+  │
+  ▼
+Main Menu
+  │
+  ├── Add Workout
+  │      │
+  │      ▼
+  │   Enter Exercise Data
+  │      │
+  │      ▼
+  │   Validate Input
+  │      │
+  │      ▼
+  │   Save Workout
+  │
+  ├── View Progress
+  │      │
+  │      ▼
+  │   Read Stored Data
+  │      │
+  │      ▼
+  │   Display Workout History
+  │
+  └─
+```
